@@ -45,6 +45,7 @@
 }
 
 .newsletter button {
+    border: 1px solid black;
     width: 210px;
     height: 70px;
     border-radius: 80px;
@@ -52,4 +53,9 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+
+.newsletter button:hover{
+    background: rgb(138, 13, 13);
+    font-size: large;
 }

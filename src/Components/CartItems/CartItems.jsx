@@ -45,7 +45,7 @@ const CartItems = () => {
                 <hr />
                 <div className="cartitems-total-item">
                     <p>Shipping Fee</p>
-                    <p>{getTotalCartAmount()>0 ? `$10`: `Free`}</p>
+                    <p>{getTotalCartAmount() > 500 ? 'Free' : getTotalCartAmount() > 0 ? '$10' : '$0'}</p>
                 </div>
                 <hr />
                 <div className="cartitems-total-item">

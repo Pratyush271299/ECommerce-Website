@@ -79,6 +79,13 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.productdisplay-right button:hover{
+    background-color: #ff5a5a;
+}
+.productdisplay-right button:active {
+    transform: scale(0.89); /* Shrink the button on click */
 }
 .productdisplay-right-category{
     margin-top: 10px;

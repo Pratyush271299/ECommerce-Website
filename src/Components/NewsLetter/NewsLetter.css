@@ -44,7 +44,7 @@
     font-size: 16px;
 }
 
-.newsletter button {
+.newsletter button.subscribe {
     border: 1px solid black;
     width: 210px;
     height: 70px;
@@ -55,7 +55,21 @@
     cursor: pointer;
 }
 
-.newsletter button:hover{
-    background: rgb(138, 13, 13);
+.newsletter button.subscribe:hover{
+    border: 1px solid rgb(132, 187, 132);
+    background: rgb(132, 187, 132);
     font-size: large;
+}
+
+.newsletter button.subscribed{
+    font-size: large;
+    font-weight: 700;
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: green;
+    color: white;
+    border: 1px solid green;
+    cursor: not-allowed;
+    transition: font-size 0.3s ease;
 }

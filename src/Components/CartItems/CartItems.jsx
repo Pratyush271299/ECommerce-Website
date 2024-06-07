@@ -18,6 +18,10 @@ const CartItems = () => {
             setDiscountedTotal(discountedAmount);
             setPromoCode('')
         }
+        else {
+            alert('PLEASE ENTER VALID PROMO CODE!');
+            setPromoCode('')
+        }
     }
 
   return (

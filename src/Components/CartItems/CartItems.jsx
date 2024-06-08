@@ -31,7 +31,7 @@ const CartItems = () => {
         if (promocode === 'discount50') {
             alert('PROMO CODE HAS BEEN ENTERED!');
             setDiscount(50);
-            const discountedAmount = total - 50; // Fixed the discount calculation
+            const discountedAmount = total - discount; // Fixed the discount calculation
             setDiscountedTotal(discountedAmount);
             setPromoCode('');
         } else {

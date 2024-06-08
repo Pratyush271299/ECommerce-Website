@@ -20,6 +20,8 @@ const CartItems = () => {
         setDiscountedTotal
     } = useContext(ShopContext);
 
+    const cartArray = [all_product, cartItems, removeFromCart, getTotalCartAmount, promocode, discount, discountedTotal];
+
     const handleInputChange = e => {
         setPromoCode(e.target.value);
     };
@@ -46,7 +48,7 @@ const CartItems = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ all_product}), // Send relevant cart data
+            body: JSON.stringify({}), // Send relevant cart data
         });
 
         if (response.status === 500) {
